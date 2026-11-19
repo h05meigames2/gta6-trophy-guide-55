@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GTA VI Trophy Guide &amp; Tracker — Leonida Platinum Road</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">
+    <p class="kicker">Grand Theft Auto VI &middot; PlayStation 5 &middot; offline guide</p>
+    <h1>Leonida Platinum Road</h1>
+    <p class="sub">Every one of the 55 official trophies — name, description and grade as PlayStation publishes them — with a cited guide, a roadmap to the platinum, and a tracker that saves in your browser.</p>
+  </div>
+  <div class="progress-card" id="progressCard">
+    <p class="big"><span id="earnedCount">0</span><span class="of"> / 55 earned</span></p>
+    <div class="bar"><div class="fill" id="progressFill" style="width:0%"></div></div>
+    <p class="counts" id="gradeCounts"></p>
+    <p class="nextup" id="nextUp"></p>
+  </div>
+</header>
+
+<nav class="tabs" aria-label="Sections">
+  <button type="button" data-tab="tracker" class="active">Tracker</button>
+  <button type="button" data-tab="roadmap">Roadmap to Platinum</button>
+  <button type="button" data-tab="missables">Missables</button>
+</nav>
+
+<section id="tab-tracker" class="tabpage active">
+  <div class="controls">
+    <label class="search">Search <input id="search" type="search" placeholder="Trophy name or description…"></label>
+    <label>Grade
+      <select id="gradeFilter">
+        <option value="all">All grades</option>
+        <option value="platinum">Platinum</option>
+        <option value="gold">Gold</option>
+        <option value="silver">Silver</option>
+        <option value="bronze">Bronze</option>
+      </select>
+    </label>
+    <label class="spoiler">Spoiler-safe <input id="spoilerToggle" type="checkbox"> <span>hide story trophies until earned</span></label>
+    <div class="io">
+      <button id="exportBtn" type="button">Export progress</button>
+      <label class="importBtn">Import progress <input id="importFile" type="file" accept="application/json,.json"></label>
+      <button id="resetBtn" type="button">Reset</button>
+    </div>
+  </div>
+  <div class="chips" id="kindChips" role="group" aria-label="Filter by kind"></div>
+  <p class="hint" id="listHint"></p>
+  <main class="layout">
+    <div class="listwrap">
+      <table>
+        <thead><tr><th>Earned</th><th>Trophy</th><th>Grade</th><th>Official description</th></tr></thead>
+        <tbody id="rows"></tbody>
+      </table>
+      <p class="empty" id="emptyState" hidden></p>
+    </div>
+    <aside class="detail" id="detail" aria-live="polite">
+      <p class="detail-empty">Select a trophy to read its guide and sources.</p>
+    </aside>
+  </main>
+</section>
+
+<section id="tab-roadmap" class="tabpage">
+  <h2>Roadmap to the platinum</h2>
+  <p class="lede">One playthrough, about 200 hours, difficulty 4/10 (PowerPyx). No online trophies, no difficulty trophies, no mission medals — and no mission replay, so keep a manual save at the start of every chapter. Free roam stays open after the story for all cleanup except the one missable meditation.</p>
+  <ol class="stages" id="roadmapStages"></ol>
+  <h3>The 100% completion checklist (A Long Road)</h3>
+  <p>The checklist only appears after the story, under Progress &gt; Stats &gt; 100% Completion, and progress made during the story already counts. It asks for roughly 60% of true completion — not everything. Figures: PowerPyx / KeenGamer.</p>
+  <table class="checklist">
+    <thead><tr><th>What</th><th>Needed</th></tr></thead>
+    <tbody id="checklistRows"></tbody>
+  </table>
+</section>
+
+<section id="tab-missables" class="tabpage">
+  <h2>Missable trophies</h2>
+  <p class="lede">Only one trophy in the whole list can be missed, according to PowerPyx, KeenGamer and GTABase. Every other trophy can be earned in free roam after the story.</p>
+  <div id="missableList"></div>
+  <h3>How to stay safe</h3>
+  <ul>
+    <li>Make a manual save at the beginning and end of every chapter (15 save slots). There is no mission replay and no New Game Plus.</li>
+    <li>Make a manual save before the final mission.</li>
+    <li>Leave cheats off: using a cheat disables trophies and saving.</li>
+    <li>Some optional missions become unavailable during certain story sections, but there are more optional tasks than the 100 required for completion, so missing a few will not block A Long Road.</li>
+  </ul>
+</section>
+
+<footer>
+  <p>Names, descriptions and grades: the official PlayStation list, as carried by <a href="https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/">Exophase</a> and <a href="https://psnprofiles.com/trophies/43531-grand-theft-auto-vi">PSNProfiles</a> (the two agree on all 55). Guides are this entry's own words; each trophy names its sources beside its guide, and methods not yet confirmed at launch are marked UNCONFIRMED instead of invented. No Rockstar logo, artwork or game screenshots are used. Works fully offline — progress is stored in your browser only.</p>
+  <p class="fine">Fan-made guide. Grand Theft Auto and GTA are trademarks of Rockstar Games / Take-Two Interactive. This guide is not affiliated with or endorsed by Rockstar Games.</p>
+</footer>
+<script type="module" src="main.js"></script>
+</body>
+</html>
